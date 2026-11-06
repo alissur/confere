@@ -1,0 +1,30 @@
+:root{--bg:#0E0D16;--group:#1A1925;--ink:#F1F0FA;--soft:#C9C6DE;--mute:#8F8CA8;--accent:#9A90FF;--action:#F2B844;--on-action:#1B1530;--line:rgba(255,255,255,.1);--neg:#FF7D7D;--pos:#5FD39A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(ellipse 120% 420px at 50% 0,rgba(91,76,240,.3),rgba(91,76,240,0) 70%) no-repeat,var(--bg);color:var(--ink);font:400 17px/1.6 'Schibsted Grotesk',system-ui,sans-serif}
+main,header,footer{max-width:720px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:12px;padding-top:28px}
+header a.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;font:700 24px/1 Newsreader,Georgia,serif}
+header svg{width:44px;height:27px}
+h1{font:700 clamp(38px,9vw,56px)/1.05 Newsreader,Georgia,serif;letter-spacing:-.6px;margin:48px 0 14px}
+h2{font:700 26px/1.2 Newsreader,Georgia,serif;margin:38px 0 8px}
+p,li{color:var(--soft)}
+strong{color:var(--ink);font-weight:600}
+a{color:var(--accent)}
+.lead{font-size:20px;line-height:1.5}
+.updated{color:var(--mute);font-size:15px}
+.group{background:var(--group);border-radius:26px;padding:6px 22px;margin:20px 0}
+.group>div{padding:16px 0;border-bottom:1px solid var(--line)}
+.group>div:last-child{border-bottom:0}
+.group h3{margin:0 0 2px;font-size:17px;font-weight:600;color:var(--ink)}
+.group p{margin:0;font-size:16px}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+.button{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;border-radius:999px;background:var(--action);color:var(--on-action);font-weight:600;text-decoration:none;margin-top:6px}
+.verdicts{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.verdicts span{padding:5px 13px;border-radius:999px;font-size:15px;font-weight:600}
+.v-false{background:rgba(255,107,107,.15);color:var(--neg)}
+.v-true{background:rgba(64,194,122,.15);color:var(--pos)}
+.v-open{background:rgba(242,184,68,.15);color:var(--action)}
+footer{margin-top:56px;padding-top:20px;padding-bottom:40px;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:8px}
