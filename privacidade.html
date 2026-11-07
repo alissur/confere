@@ -13,25 +13,27 @@
 <header><a class="brand" href="./"><svg viewBox="0 0 120 72" aria-hidden="true"><path d="M6 36C30 4 90 4 114 36 90 68 30 68 6 36Z" fill="#F1F0FA"/><circle cx="60" cy="36" r="20" fill="#E9A514"/><circle cx="60" cy="36" r="9" fill="#12131B"/></svg>Confere</a></header>
 <main>
 <h1>Política de Privacidade</h1>
-<p class="updated">Atualizada em 6 de novembro de 2026</p>
+<p class="updated">Atualizada em 7 de novembro de 2026</p>
 <p class="lead">O Confere coleta o mínimo necessário para checar conteúdos. Não vendemos dados, não exibimos anúncios e não usamos ferramentas de análise de comportamento.</p>
 <h2>Quem é o responsável</h2>
 <p>O Confere é mantido por Alisson, seu desenvolvedor. Para qualquer assunto de privacidade, escreva para <a href="mailto:investlevelofficial@gmail.com">investlevelofficial@gmail.com</a>.</p>
 <h2>O que usamos e por quê</h2>
 <div class="group">
 <div><h3>Conta</h3><p>Ao entrar com Google, o Firebase Authentication (Google) recebe seu nome, e-mail, foto e um identificador da conta. No modo sem conta, ele cria um identificador anônimo. Usamos isso para manter sua sessão e aplicar o limite diário.</p></div>
-<div><h3>Contadores de uso</h3><p>O servidor guarda o identificador da conta, a data e quantas análises foram feitas no dia. No modo sem conta, guarda também um código derivado do identificador do aparelho, que impede reiniciar o limite ao reinstalar o app. Esses registros são apagados depois de 8 dias.</p></div>
+<div><h3>Contadores de uso</h3><p>O servidor guarda o identificador da conta, a data e quantas análises foram feitas no dia. No modo sem conta, guarda também um código derivado do identificador do aparelho, que impede reiniciar o limite ao reinstalar o app, e um código cifrado derivado do endereço de rede, que evita abuso. O endereço em si não é guardado. Esses registros são apagados depois de 8 dias.</p></div>
 <div><h3>Conteúdo que você envia para checar</h3><p>Links, imagens, vídeos, áudios, textos e perguntas vão para o servidor do Confere, que os analisa e os envia aos serviços listados abaixo. Não envie conteúdo com dados pessoais seus ou de terceiros que não queira ver processados.</p></div>
+<div><h3>Área de transferência</h3><p>Quando você abre a janela de checagem, o app lê o que foi copiado para achar um link. Links de redes sociais conhecidas podem ser conferidos sozinhos se você puxar a barra logo depois de copiar. Os demais pedem um toque seu. O texto copiado só sai do aparelho quando vira uma checagem.</p></div>
 <div><h3>Histórico</h3><p>Sua lista de checagens fica somente no seu aparelho.</p></div>
 </div>
 <h2>Com quem o conteúdo é compartilhado</h2>
-<p>A conexão do app com o servidor do Confere passa pela Cloudflare, que apenas encaminha os pedidos.</p>
-<p>Só para fazer a checagem, o conteúdo ou as alegações extraídas dele podem ser enviados a: Google (Gemini e Fact Check Tools), Groq, NVIDIA e OpenRouter, além de mecanismos de busca, que recebem apenas os termos pesquisados. Cada serviço tem sua própria política de privacidade. Esses envios não incluem seu nome, seu e-mail nem o identificador da sua conta.</p>
+<p>A conexão do app com o servidor do Confere passa pela Cloudflare e pela Tailscale, que apenas encaminham os pedidos.</p>
+<p>Só para fazer a checagem, o conteúdo ou as alegações extraídas dele podem ser enviados a: Google (Gemini e Fact Check Tools), Groq, NVIDIA e OpenRouter, além de mecanismos de busca, que recebem apenas os termos pesquisados. Cada serviço tem sua própria política de privacidade. Esses envios não incluem seu nome, seu e-mail nem o identificador da sua conta. Alguns desses serviços são usados em planos gratuitos, cujas regras podem permitir o uso do conteúdo para melhorar os produtos deles. Por isso, não envie nada confidencial.</p>
+<p>Para conferir dados públicos, o servidor também consulta Banco Central, IBGE, Câmara dos Deputados, Senado Federal, Portal da Transparência, Agência Brasil, Wikipédia e sites de notícias. Essas consultas levam só o necessário, como termos de busca, nome de parlamentar, número de projeto ou ano, e nunca dados da sua conta.</p>
 <h2>Por quanto tempo guardamos</h2>
 <ul>
 <li><strong>Resultados de checagem:</strong> ficam em um cache compartilhado, sem ligação com a sua conta, para responder mais rápido quem enviar o mesmo conteúdo. Ficam guardados por até 60 dias.</li>
-<li><strong>Alegações mais checadas:</strong> usadas no Radar da Semana, sem ligação com a sua conta, por até 30 dias.</li>
-<li><strong>Arquivos enviados:</strong> vídeos e imagens são processados de forma temporária, e o servidor guarda apenas uma impressão digital para reconhecer repostagens, junto do resultado.</li>
+<li><strong>Alegações mais checadas:</strong> usadas no Radar da Semana, sem ligação com a sua conta, por até 30 dias. Frases digitadas por você não entram no Radar.</li>
+<li><strong>Arquivos enviados:</strong> vídeos e imagens são processados de forma temporária, e o servidor não guarda o arquivo nem a miniatura, apenas uma impressão digital para reconhecer repostagens, junto do resultado.</li>
 <li><strong>Denúncias de respostas:</strong> o motivo, o seu comentário, o link e a resposta denunciada ficam guardados por até 90 dias, sem ligação com a sua conta.</li>
 <li><strong>Contadores de uso:</strong> 8 dias.</li>
 <li><strong>Conta:</strong> até você excluí-la.</li>
@@ -39,7 +41,7 @@
 <h2>Permissões do aparelho</h2>
 <div class="group">
 <div><h3>Aparecer sobre outros apps</h3><p>Mostra a barra lateral e a janela de checagem sobre o app que você está usando. É opcional.</p></div>
-<div><h3>Microfone</h3><p>Usado apenas quando você grava um áudio para checar.</p></div>
+<div><h3>Microfone</h3><p>Usado apenas quando você grava um áudio para checar ou dita uma pergunta. O ditado usa o reconhecimento de voz do aparelho, que pode enviar sua voz ao serviço do fabricante ou do Google.</p></div>
 <div><h3>Notificações</h3><p>Mostram o andamento das checagens e o atalho ativo.</p></div>
 </div>
 <h2>Seus direitos</h2>
